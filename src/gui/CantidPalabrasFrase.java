@@ -9,13 +9,14 @@ public class CantidPalabrasFrase {
 	{
 		//Scanner scanner=new Scanner(System.in);
 		//String cadena=scanner.next();
-        ContadorPalabras();
+		String frase="  Yo soy     Yunier  ";
+        ContadorPalabras(frase);
         ContadorDigitos();
 	}
 	
-    static void ContadorPalabras()
+    static void ContadorPalabras(String frase)
 	{
-	   String frase="  Yo soy     Yunier  ";
+	    //String frase="  Yo soy     Yunier  ";
 	    frase=frase.trim();
 		frase=frase.replaceAll("\s+"," ");
 		String[]palabras=frase.split(" ");
